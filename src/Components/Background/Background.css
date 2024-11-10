@@ -1,0 +1,49 @@
+/* background.css */
+
+.background {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.fade-in {
+    animation: fade-in 500ms ease-in-out;
+    -webkit-animation: fade-in 500ms ease-in-out;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media only screen and (max-width: 768px) {
+    .background {
+        height: 70%;
+        width: 100%;
+    }
+    .fade-in {
+        animation: fade-in 700ms ease-in-out;
+        -webkit-animation: fade-in 700ms ease-in-out;
+}
+
+    .overlay {
+      
+        height: 10%;
+    }
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(4, 4, 4, 0.518);
+    z-index: 0;
+    width: 100%;
+}
