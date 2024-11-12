@@ -22,6 +22,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+    
     .background {
         height: 70%;
         width: 100%;
@@ -29,14 +30,15 @@
     .fade-in {
         animation: fade-in 700ms ease-in-out;
         -webkit-animation: fade-in 700ms ease-in-out;
-}
+    }
+    /*
 
     .overlay {
-      
-        height: 10%;
+        height: 70%;
     }
-    
-}
+    */
+}   
+
 
 .overlay {
     position: absolute;
@@ -47,3 +49,10 @@
     z-index: 0;
     width: 100%;
 }
+
+@media (max-width: 768px) { 
+    .overlay {
+        height: 70%;
+    }
+}
+    

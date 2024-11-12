@@ -7,7 +7,7 @@
     width: 100%;
     top: 70%;
     display: flex;
-    padding:0 2rem;
+    padding:0 1rem;
 }
 .hero-text {
     color: #fff;
@@ -16,7 +16,7 @@
     line-height: 100px;
 }
 
-
+/*
 .hero-explore {
     display: flex;
     align-items: center;
@@ -36,11 +36,11 @@
     font-size: 20px;
     font-weight: 500;
 }
-
+*/
 .hero-dot-play {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     color: #fff;
     width: 100%;
@@ -72,8 +72,7 @@
     gap: 30px;
     color: #fff;
     cursor: pointer;
-    /* Define a specific width */
-    
+
 }
 
 .hero-play p {
@@ -88,6 +87,24 @@
     .hero {
         
         top: 50%;
+
+        
         
     }
+
+    .hero-play img{
+        width: 40px;
+    }
+
+
+    .hero-play {
+      
+        gap: 10px;
+       
+    }
+
+
+    
+
+    
 }

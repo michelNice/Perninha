@@ -37,9 +37,11 @@ body {
   padding: 1.5rem 2rem;
 }
 @media (max-width: 992px) {
+  /*
   .navbar-content {
     background-color: #a3b1c1;
   }
+    */
 }
 .navbar-content-left, .navbar-content-right {
   display: flex;
