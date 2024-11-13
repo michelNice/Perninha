@@ -2,7 +2,7 @@
 // variables
 $white: #fff;
 $black: #000;
-$primary: #009f38;
+
 
 $nav-bg-color: #a3b1c1;
 
@@ -54,11 +54,12 @@ body {
 // COMPONENTS
 // navbar
 .navbar {
-  position: fixed;
+  /*position: fixed;*/
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 1000; /* Ensure this is high enough */
-  background-color: rgba(0, 0, 0, 0.8); 
+  //background-color: rgba(0, 0, 0, 0.8); 
   
 
   &.active {
@@ -74,11 +75,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 2rem;
-
+    /*
     @include media-max-width(lg) {
       background-color: $nav-bg-color;
     }
-
+    */
     &-left,
     &-right {
       display: flex;
@@ -238,43 +239,8 @@ body {
 }
 /*
 
-.btn-registration {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-  padding: 0.625rem 1.25rem;
-  border: 0.13rem solid rgba(255, 255, 255, 0.2);
-  border-radius: 0.3rem;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 
-  &:after {
-    content: "\2192";
-    color: $primary;
-    transition: color 0.3s ease-in-out;
-  }
 
-  &:hover,
-  &:focus {
-    border-color: $primary;
-    text-decoration: none;
-  }
-
-  .active & {
-    border-color: $primary;
-
-    &:hover {
-      background: $primary;
-      color: $white;
-
-      &:after {
-        color: $white;
-      }
-    }
-  }
-}
-*/
 // Other page styles
 header {
   display: flex;
@@ -284,56 +250,19 @@ header {
     no-repeat center/cover;
   color: #fff;
 
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 30px;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(45, 36, 45, 0.2);
-  }
-
-  h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 40px;
-    font-weight: 400;
-  }
-
-  p {
-    font-size: 22px;
-    font-weight: 300;
-  }
-}
-
-.content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 30px;
-  min-height: 100vh;
-
-  h2 {
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-
-  p {
-    font-weight: 300;
-    line-height: 1.5;
-  }
-}
-
+*/
 
 .main_conteiner{
   display:flex;
 }
 
 .lang_toggle{
-  background:transperat;
   border-radius:100px;
- 
+  border: 1px solid #fff;
+  -webkit-border-radius: 1px solid #fff;
+  -moz-border-radius: 1px solid #fff;
+  -ms-border-radius: 1px solid #fff;
+  -o-border-radius: 1px solid #fff;
 }
 
 .lang_toggle input{
@@ -366,16 +295,21 @@ header {
 
 
 .toggle_header div:first-child::before {
-    content: "";
-    height: 130%;
-    width: 70px;
-    /*background: #fff;*/
-    position: absolute;
-    right: 0;
-    top: -9px;
-    transform: translate(0, 0);
-    transition:0.3s;
-  border-radius:20px;
+  content: "";
+  height: 131%;
+  width: 71px;
+  background: #fff;
+  border: 1px solid #fff;
+  position: absolute;
+  right: 0;
+  top: -9px;
+  transform: translate(0, 0);
+  transition:0.3s;
+  border-radius:50px;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  -ms-border-radius:50px;
+  -o-border-radius:50px;
 }
 
 .langInput:checked ~ .toggle_header div:first-child::before {

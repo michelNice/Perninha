@@ -1,8 +1,9 @@
-import '../src/css/App.css';
+import './css/App.css';
 import react ,{useEffect, useState} from 'react';
 import Background from './Components/Background/Background.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Hero from './Components/Hero/Hero.jsx';
+import AboutMe from './Components/AboutMe/AboutMe.jsx';
 
 function App() {
   
@@ -36,7 +37,7 @@ function App() {
             setHeroCount={setHeroCount}
             playStatus={playStatus}
         />
-        
+        <AboutMe />
     </div>
    
   )

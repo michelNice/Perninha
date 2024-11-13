@@ -24,7 +24,7 @@
 @media only screen and (max-width: 768px) {
     
     .background {
-        height: 70%;
+        height: 60vh;
         width: 100%;
     }
     .fade-in {
@@ -52,7 +52,7 @@
 
 @media (max-width: 768px) { 
     .overlay {
-        height: 70%;
+        height: 60%;
     }
 }
     

@@ -16,13 +16,15 @@ body {
 body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 .navbar {
-  position: fixed;
+  /*position: fixed;*/
+  position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 1000; /* Ensure this is high enough */
 }
 .navbar.active {
   position: fixed;
@@ -35,13 +37,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-}
-@media (max-width: 992px) {
   /*
-  .navbar-content {
-    background-color: #a3b1c1;
+  @include media-max-width(lg) {
+    background-color: $nav-bg-color;
   }
-    */
+  */
 }
 .navbar-content-left, .navbar-content-right {
   display: flex;
@@ -168,7 +168,7 @@ body {
   display: block;
   width: 4rem;
   height: 2.5rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   /*background: url("https://i.pinimg.com/originals/ad/ed/92/aded92e86113c9fba4213f8334a43df4.png")
     no-repeat center/cover;*/
 }
@@ -177,57 +177,31 @@ body {
   text-decoration: 0;
 }
 
+/*
 
+
+
+// Other page styles
 header {
   display: flex;
   min-height: 600px;
   height: 100vh;
-  background: url("https://t3.ftcdn.net/jpg/02/67/43/44/360_F_267434405_rVfKoBDQpb6smmbNtDRWvzAYCYpsX47E.jpg") no-repeat center/cover;
+  background: url("https://t3.ftcdn.net/jpg/02/67/43/44/360_F_267434405_rVfKoBDQpb6smmbNtDRWvzAYCYpsX47E.jpg")
+    no-repeat center/cover;
   color: #fff;
-}
-header .header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 30px;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(45, 36, 45, 0.2);
-}
-header h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 40px;
-  font-weight: 400;
-}
-header p {
-  font-size: 22px;
-  font-weight: 300;
-}
 
-.content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 30px;
-  min-height: 100vh;
-}
-.content-container h2 {
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.content-container p {
-  font-weight: 300;
-  line-height: 1.5;
-}
-
+*/
 .main_conteiner {
   display: flex;
 }
 
 .lang_toggle {
-  background: transperat;
   border-radius: 100px;
+  border: 1px solid #fff;
+  -webkit-border-radius: 1px solid #fff;
+  -moz-border-radius: 1px solid #fff;
+  -ms-border-radius: 1px solid #fff;
+  -o-border-radius: 1px solid #fff;
 }
 
 .lang_toggle input {
@@ -258,15 +232,20 @@ header p {
 
 .toggle_header div:first-child::before {
   content: "";
-  height: 130%;
-  width: 70px;
+  height: 131%;
+  width: 71px;
   background: #fff;
+  border: 1px solid #fff;
   position: absolute;
   right: 0;
   top: -9px;
   transform: translate(0, 0);
   transition: 0.3s;
-  border-radius: 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 .langInput:checked ~ .toggle_header div:first-child::before {
