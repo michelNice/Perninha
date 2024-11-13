@@ -7,23 +7,30 @@ import  image4 from '../img/aboutmeImg4.jpg';
 
 const AboutMe = () => {
   return (
-    <div>
-        <h2>About me</h2>
+    <div className="main-conteiner">
+       <div className="starcontainer">
+      <h2>About me</h2>
+      <div className="star-line">
+        <hr className="line" />
+        <i className="fa fa-star star-icon"></i>
+        <hr className="line" />
+      </div>
+    </div>
         <div className="container">
       <div className="contentLeft">
         <div className="row">
           <div className="imgWrapper">
-            <img src={image1} alt="" 
+            <img src={image1} alt="About me photo one" 
             />
           </div>
           <div className="imgWrapper">
-            <img src={image2}alt="" />
+            <img src={image2}alt="About me photo two" />
           </div>
           <div className="imgWrapper">
-            <img src={image3} alt="" />
+            <img src={image3} alt="About me photo tree" />
           </div>
           <div className="imgWrapper">
-            <img src={image4} alt="" />
+            <img src={image4} alt="About me photo four" />
           </div>
         </div>
       </div>

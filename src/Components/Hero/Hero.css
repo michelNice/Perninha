@@ -1,5 +1,6 @@
-
-
+:root{
+    --white--color:#fff;
+}
 
 .hero {
     z-index: 2;
@@ -9,13 +10,14 @@
     display: flex;
     padding:0 1rem;
 }
+/*
 .hero-text {
-    color: #fff;
+    color:var(--white--color);
     font-size: 80px;
     font-weight: 500;
     line-height: 100px;
 }
-
+*/
 
 .hero-dot-play {
     /*margin-top: 20px;*/
@@ -36,7 +38,7 @@
 .hero-dot {
     width: 15px;
     height: 15px;
-    background: #fff;
+    background:var(--white--color);
     cursor: pointer;
     border-radius: 50%;
 }
@@ -50,7 +52,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    color: #fff;
+    color: var(--white--color);
     cursor: pointer;
 
 }
@@ -62,26 +64,11 @@
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:48rem) {
    
-    .hero {
+    .hero {top: 50%;}
 
-        top: 50%;
-        
-    }
+    .hero-play img{width: 40px;}
 
-    .hero-play img{
-        width: 40px;
-    }
-
-    .hero-play {
-
-        gap: 10px;
-
-    }
-
-
-    
-
-    
+    .hero-play {gap: 10px;}
 }

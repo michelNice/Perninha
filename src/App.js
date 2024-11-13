@@ -6,7 +6,7 @@ import Hero from './Components/Hero/Hero.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
 
 function App() {
-  
+  /*
   let heroData = [
     
     {text1:"No excuse",text2:"No limits"},
@@ -14,6 +14,7 @@ function App() {
     {text1:"Give into",text2:"your passition"},
     
   ]
+  */
   
   const [heroCount,setHeroCount] = useState(1);
   const [playStatus,setPlayStatus] = useState(false);
@@ -32,7 +33,7 @@ function App() {
 
         <Hero 
             setPlayStatus={setPlayStatus}
-            heroData={heroData[heroCount]}
+            /*heroData={heroData[heroCount]}*/
             heroCount={heroCount}
             setHeroCount={setHeroCount}
             playStatus={playStatus}
