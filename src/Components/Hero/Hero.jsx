@@ -2,7 +2,7 @@ import React from 'react'
 import './Hero.css';
 import play_icon from '../img/play_icon.png'
 import pause_icon from '../img/pause_icon.png'
-const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
+const Hero = ({setHeroCount,heroCount,setPlayStatus,playStatus}) => {
   return (
     <div className='hero'>
     <div className='hero-dot-play'>

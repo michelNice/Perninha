@@ -1,0 +1,43 @@
+
+.parnership{
+    background: rgb(227, 227, 219);
+}
+
+.crews{
+    
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    align-items: center;
+    text-align: center;
+   
+}
+
+.crews img{
+    transition: 0.3s ease;
+    width:240px;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+
+
+
+.crews img:hover{
+    filter: grayscale(0%) brightness(0.3) sepia(1) hue-rotate(180deg);
+    -webkit-filter: grayscale(0%) brightness(0.3) sepia(1) hue-rotate(180deg);
+}
+
+
+@media(max-width:46rem){
+    .crews img{
+        transition: 0.3s ease;
+        width:140px;
+        filter: grayscale(100%);
+        cursor: pointer;
+        padding:2rem 0;
+    }
+    
+}
+
+
+

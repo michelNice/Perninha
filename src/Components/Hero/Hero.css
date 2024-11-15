@@ -1,5 +1,6 @@
 :root{
     --white--color:#fff;
+    --orange--color:#d35400;
 }
 
 .hero {
@@ -10,28 +11,20 @@
     display: flex;
     padding:0 1rem;
 }
-/*
-.hero-text {
-    color:var(--white--color);
-    font-size: 80px;
-    font-weight: 500;
-    line-height: 100px;
-}
-*/
+
 
 .hero-dot-play {
-    /*margin-top: 20px;*/
     display: flex;
     justify-content:space-between;
     align-items: center;
-    color: #fff;
+    color:var(--white--color);
     width: 100%;
 }
 
 .hero-dots {
     display: flex;
     align-items: center;
-    gap: 23px;
+    gap:1.438rem;
     list-style: none;
 }
 
@@ -43,23 +36,21 @@
     border-radius: 50%;
 }
 
-.hero-dot.orange {
-    background:#d35400;
-}
+.hero-dot.orange {background:var(--orange--color);}
 
 .hero-play {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap:1.875rem;
     color: var(--white--color);
     cursor: pointer;
 
 }
 
 .hero-play p {
-    font-size: 15px;
-    color: #fff;
+    font-size:1rem;
+    color:var(--white--color);
 }
 
 
@@ -70,5 +61,5 @@
 
     .hero-play img{width: 40px;}
 
-    .hero-play {gap: 10px;}
+    .hero-play {gap:.625rem;}
 }

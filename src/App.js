@@ -4,18 +4,9 @@ import Background from './Components/Background/Background.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Hero from './Components/Hero/Hero.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
+import Parnership from './Components/Partnership/Parnership.jsx';
 
 function App() {
-  /*
-  let heroData = [
-    
-    {text1:"No excuse",text2:"No limits"},
-    {text1:"Indulge",text2:"your passtion"},
-    {text1:"Give into",text2:"your passition"},
-    
-  ]
-  */
-  
   const [heroCount,setHeroCount] = useState(1);
   const [playStatus,setPlayStatus] = useState(false);
   
@@ -33,12 +24,13 @@ function App() {
 
         <Hero 
             setPlayStatus={setPlayStatus}
-            /*heroData={heroData[heroCount]}*/
             heroCount={heroCount}
             setHeroCount={setHeroCount}
             playStatus={playStatus}
         />
         <AboutMe />
+
+        <Parnership />
     </div>
    
   )
