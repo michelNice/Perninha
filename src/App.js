@@ -4,7 +4,8 @@ import Background from './Components/Background/Background.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Hero from './Components/Hero/Hero.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
-import Parnership from './Components/Partnership/Parnership.jsx';
+import Crew from './Components/Crew/Crew.jsx';
+import Contact from './Components/Contact/Contact.jsx'
 
 function App() {
   const [heroCount,setHeroCount] = useState(1);
@@ -30,7 +31,10 @@ function App() {
         />
         <AboutMe />
 
-        <Parnership />
+        <Crew />
+
+        <Contact />
+
     </div>
    
   )

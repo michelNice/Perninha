@@ -8,7 +8,7 @@ import  image4 from '../img/aboutmeImg4.jpg';
 const AboutMe = () => {
   return (
     <div className="main-conteiner">
-       <div className="starcontainer">
+    <div className="starcontainer">
       <h2>About me</h2>
       <div className="star-line">
         <hr className="line" />

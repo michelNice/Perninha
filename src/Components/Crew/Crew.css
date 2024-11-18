@@ -1,15 +1,16 @@
 
 .parnership{
     background: rgb(227, 227, 219);
+    
 }
 
+h2{padding:1rem 0;}
+
 .crews{
-    
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
     align-items: center;
     text-align: center;
-   
 }
 
 .crews img{
@@ -17,26 +18,21 @@
     width:240px;
     filter: grayscale(100%);
     cursor: pointer;
+    display: block;
+    margin:0 auto;
+    padding:2rem 0;
 }
-
-
-
 
 .crews img:hover{
     filter: grayscale(0%) brightness(0.3) sepia(1) hue-rotate(180deg);
     -webkit-filter: grayscale(0%) brightness(0.3) sepia(1) hue-rotate(180deg);
 }
 
-
-@media(max-width:46rem){
+@media(max-width:66rem){
     .crews img{
-        transition: 0.3s ease;
-        width:140px;
-        filter: grayscale(100%);
-        cursor: pointer;
+        width:130px;
         padding:2rem 0;
     }
-    
 }
 
 
