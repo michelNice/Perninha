@@ -2,6 +2,12 @@ import React from "react";
 //import "@fancyapps/ui/dist/fancybox.css";
 import { Fancybox } from "@fancyapps/ui";
 import './Gallery.css'
+import image1 from '../img/gallery2.jpg'
+import image2 from '../img/gallery3.jpg'
+import image3 from '../img/gallery9.jpg'
+import image4 from '../img/gallery6.jpg'
+import image5 from '../img/gallery10.jpg'
+import image6 from '../img/gallery4.jpg'
 
 const Gallery = () => {
   React.useEffect(() => {
@@ -24,16 +30,25 @@ const Gallery = () => {
   }, []);
 
   const images = [
-    "https://cdn.pixabay.com/photo/2023/05/22/10/49/houses-8010401_1280.jpg",
-    "https://cdn.pixabay.com/photo/2023/07/13/05/36/mountains-8123933_1280.jpg",
-    "https://cdn.pixabay.com/photo/2022/12/12/21/35/stream-7651969_1280.jpg",
-    "https://cdn.pixabay.com/photo/2022/10/24/20/22/muhlviertel-7544316_1280.jpg",
-    "https://cdn.pixabay.com/photo/2019/09/13/11/47/mountains-4473760_1280.jpg",
-    "https://cdn.pixabay.com/photo/2019/05/29/20/01/sunset-4238445_1280.jpg",
+     image1,
+     image2,
+     image3,
+     image4,
+     image5,
+     image6,
   ];
 
   return (
     <main className="main">
+        <div className="starcontainer">
+      <h2>Crews</h2>
+      <div className="star-line">
+        <hr className="line" />
+        <i className="fa fa-users star-icon"></i>
+        <hr className="line" />
+      </div>
+    </div>
+
       <div className="container-gallery">
         {images.map((image, index) => (
           <div className="card" key={index}>
