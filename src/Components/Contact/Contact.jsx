@@ -29,7 +29,7 @@ const Contact = () => {
       <div className="rounded-social-buttons">
         <a
           className="social-button facebook"
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/perninha94/"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -6,17 +6,16 @@ import logo3 from '../img/king.png'
 
 const Parnership = () => {
   return (
-    <div className='conteiner-parnership'>
-        <div className="parnershipp">
-        <div className='partnership-growth'>
-    <a href=""><img src={logo1} alt=""/></a>
-    <p>Use o cupom 'Perninha' na Growth.</p>
-</div>
-
-        <a href="#"><img src={logo2} alt=""/></a>
-    </div>
-    <hr></hr>
-  </div>
+    <>
+      <div className="conteiner-parnership">
+          <div className="parneshipImgs">
+            <a href="https://www.gsuplementos.com.br/" target="_blank" rel="noopener noreferrer"><img src={logo1} alt="" /></a>
+            <a href="https://www.greenpanda.com" target="_blank" rel="noopener noreferrer"><img src={logo2} alt="" /></a>
+              <p>Use o cupom <strong>'Perninha'</strong>na Growth.</p>
+          </div>
+      </div>
+      <hr />
+    </>
   );
 };
 

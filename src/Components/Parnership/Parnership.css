@@ -2,43 +2,32 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    justify-content: center;
-}
-.parnershipp{
-    display: flex;
-    justify-content: center;
-    
+    align-items: center;
+    position: relative;
 }
 
-.parnership-growth{
-    display: flex;
-    flex-direction: column;
+.parneshipImgs img{
+    width: 350px;
 }
 
-.conteiner-parnership .kingImg{
-    width: 100px;
-    margin: 2rem auto;
-    display: block;
-    
+.parneshipImgs p{
+    text-align: center;
+    padding-bottom: 2rem;
 }
-.conteiner-parnership img{
-    width: 400px;
-    justify-content: center;
-    
-}
-
-
-
-
-
 
 
 
 @media(max-width:600px){
     
-    .conteiner-parnership img{
-        width: 100px;
+    .parneshipImgs img{
+        width: 140px;
         justify-content: center;
         
     }
+
+    .parneshipImgs p{
+        font-size: 0.7rem;
+        padding-bottom:1rem;
+    }
+    
 }
