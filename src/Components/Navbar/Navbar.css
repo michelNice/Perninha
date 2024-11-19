@@ -227,4 +227,19 @@ header {
   transition: 0.3s;
 }
 
+
+@media(max-width:700px){
+  .toggle_header img {
+    width: 35px;
+    height: 21.5px;
+  }
+  
+  .toggle_header div:first-child::before {
+    height: 130%;
+    width: 65px;
+  }
+
+
+}
+
 /*# sourceMappingURL=Navbar.css.map */

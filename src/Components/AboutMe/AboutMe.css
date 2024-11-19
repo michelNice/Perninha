@@ -41,12 +41,18 @@
     user-select: none;
     transition: 0.3s ease;
 }
+
 .contentLeft .row .imgWrapper:hover img{
-    transform: scale(1.5);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 .contentLeft .row .imgWrapper:nth-child(odd){
     transform: translateY(-20px);
 }
+
 .contentLeft .row .imgWrapper:nth-child(even){
     transform: translateY(20px);
 }
