@@ -9,7 +9,6 @@ const Contact = () => {
       <div className="star-line">
         <hr className="line" />
         <i className="fa fa-paper-plane star-icon"></i>
-        
         <hr className="line" />
       </div>
     </div>

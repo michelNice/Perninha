@@ -7,6 +7,7 @@ import AboutMe from './Components/AboutMe/AboutMe.jsx';
 import Crew from './Components/Crew/Crew.jsx';
 import Contact from './Components/Contact/Contact.jsx'
 import Gallery from './Components/Gallery/Gallery.jsx';
+import Parnership from './Components/Parnership/Parnership.jsx';
 
 function App() {
   const [heroCount,setHeroCount] = useState(1);
@@ -33,6 +34,9 @@ function App() {
         <AboutMe />
 
         <Crew />
+        
+        <Parnership />
+
          
        <Gallery />
 

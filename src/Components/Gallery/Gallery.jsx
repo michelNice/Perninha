@@ -41,10 +41,10 @@ const Gallery = () => {
   return (
     <main className="main">
         <div className="starcontainer">
-      <h2>Crews</h2>
+      <h2>Gallery</h2>
       <div className="star-line">
         <hr className="line" />
-        <i className="fa fa-users star-icon"></i>
+        <i className="fa fa-images star-icon"></i>
         <hr className="line" />
       </div>
     </div>

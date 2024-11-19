@@ -1,7 +1,7 @@
 
 .parnership{
-    background: rgb(227, 227, 219);
-    
+    /*background: rgb(227, 227, 219);*/
+    background: rgb(247, 247, 246);
 }
 
 h2{padding:1rem 0;}
@@ -15,13 +15,14 @@ h2{padding:1rem 0;}
 
 .crews img{
     transition: 0.3s ease;
-    width:240px;
+    width:200px;
     filter: grayscale(100%);
     cursor: pointer;
     display: block;
     margin:0 auto;
     padding:2rem 0;
 }
+
 
 .crews img:hover{
     filter: grayscale(0%) brightness(0.3) sepia(1) hue-rotate(180deg);
