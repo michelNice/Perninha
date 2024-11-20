@@ -142,9 +142,8 @@
   display: block;
   width: 4rem;
   height: 2.5rem;
-  font-size: 1rem;
-  /*background: url("https://i.pinimg.com/originals/ad/ed/92/aded92e86113c9fba4213f8334a43df4.png")
-    no-repeat center/cover;*/
+  font-size: 1.5rem;
+ 
 }
 
 .logo:hover {
@@ -237,6 +236,13 @@ header {
   .toggle_header div:first-child::before {
     height: 130%;
     width: 65px;
+  }
+
+
+  .logo {
+    font-size:1rem;
+   
+      
   }
 
 

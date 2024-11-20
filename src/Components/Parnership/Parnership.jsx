@@ -2,8 +2,6 @@ import React from 'react';
 import './Parnership.css';
 import logo1 from '../img/Logo-Growth-Supplements.png'
 import logo2 from '../img/logo-green-removebg-preview.png'
-import logo3 from '../img/king.png'
-
 const Parnership = () => {
   return (
     <>

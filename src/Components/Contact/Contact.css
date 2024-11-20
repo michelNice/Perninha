@@ -1,3 +1,8 @@
+footer{
+	padding:4rem 2rem 1rem 0;
+  }
+  textarea {resize: none;}
+
 .container-contact{
 	position: relative;
 	width: 100%;
@@ -130,22 +135,6 @@ textarea{
 
 
 
-/*
-body {
-  background: #D0D8DB;
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-*/
-
-
-
-footer{
-  padding:4rem 2rem 1rem 0;
-}
-textarea {
-  resize: none;
-}
 
 .text {
 color: white;

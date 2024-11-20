@@ -1,10 +1,7 @@
 
-.parnership{
-    /*background: rgb(227, 227, 219);*/
-    background: rgb(247, 247, 246);
-}
-
 h2{padding:1rem 0;}
+
+.parnership{background: rgb(247, 247, 246);}
 
 .crews{
     display:grid;
