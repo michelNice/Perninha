@@ -33,7 +33,7 @@
 @media only screen and (max-width:48rem) {
     
     .background {
-        height: 60vh;
+        height: 60%;
         width: 100%;
     }
     .fade-in {
