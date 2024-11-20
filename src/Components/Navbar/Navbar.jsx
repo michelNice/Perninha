@@ -27,6 +27,29 @@ const Navbar = () => {
             </li>
           </ul>
           
+          <div className="language">
+      <div className="language-selected">en-US</div>
+      <ul>
+        <li>
+          <a href="#" className="br">
+            Portuguese
+          </a>
+        </li>
+        <li>
+          <a href="#" className="en">
+            English
+          </a>
+        </li>
+        <li>
+          <a href="#" className="es">
+            Spanish
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+          {/*
           <div className="main_container">
             <div className="lang_toggle">
               <input type="checkbox" className="langInput" id="toggleBtn" />
@@ -40,7 +63,7 @@ const Navbar = () => {
               </label>
             </div>
           </div>
-            
+            */}
           <div className="navbar-toggler">
             <span className="navbar-toggler-icon"></span>
           </div>
