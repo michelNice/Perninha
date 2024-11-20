@@ -26,7 +26,7 @@ const Navbar = () => {
               <a className="navbar-link" href="#some-content-4" data-anchor-link>Contact me</a>
             </li>
           </ul>
-          {/*
+          
           <div className="main_container">
             <div className="lang_toggle">
               <input type="checkbox" className="langInput" id="toggleBtn" />
@@ -40,7 +40,7 @@ const Navbar = () => {
               </label>
             </div>
           </div>
-            */}
+            
           <div className="navbar-toggler">
             <span className="navbar-toggler-icon"></span>
           </div>
