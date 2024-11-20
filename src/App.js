@@ -8,7 +8,7 @@ import Crew from './Components/Crew/Crew.jsx';
 import Contact from './Components/Contact/Contact.jsx'
 import Gallery from './Components/Gallery/Gallery.jsx';
 import Parnership from './Components/Parnership/Parnership.jsx';
-import LanguageSwitcher from './Components/Navbar/LanguageSwicher.jsx';
+
 
 function App() {
   const [heroCount,setHeroCount] = useState(1);

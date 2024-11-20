@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css';
+import LanguageSwitcher from './LanguageSwitcher';
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -26,28 +27,8 @@ const Navbar = () => {
               <a className="navbar-link" href="#some-content-4" data-anchor-link>Contact me</a>
             </li>
           </ul>
-          
-          <div className="language">
-      <div className="language-selected">en-US</div>
-      <ul>
-        <li>
-          <a href="#" className="br">
-            Portuguese
-          </a>
-        </li>
-        <li>
-          <a href="#" className="en">
-            English
-          </a>
-        </li>
-        <li>
-          <a href="#" className="es">
-            Spanish
-          </a>
-        </li>
-      </ul>
-    </div>
 
+          < LanguageSwitcher />
 
           {/*
           <div className="main_container">
