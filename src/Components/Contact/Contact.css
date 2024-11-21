@@ -150,12 +150,11 @@ white-space: nowrap;
 
 
 .svg-inline--fa {
-vertical-align: -0.200em;
+	vertical-align: -0.200em;
 }
 
 .rounded-social-buttons {
-text-align: center;
-
+	text-align: center;
 }
 
 .rounded-social-buttons .social-button {
@@ -174,10 +173,11 @@ font-weight: normal;
 line-height: 1.8em;
 border-radius: 1.6875rem;
 transition: all 0.5s ease;
-margin:0 0.4rem;
-margin-bottom: 0.25rem;
+margin:0 0 0 2rem;
 
 }
+
+
 
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
 -webkit-transform: rotate(360deg);
