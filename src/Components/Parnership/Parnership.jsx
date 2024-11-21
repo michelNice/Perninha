@@ -5,6 +5,14 @@ import logo2 from '../img/logo-green-removebg-preview.png'
 const Parnership = () => {
   return (
     <>
+     <div className="starcontainer">
+      <h2>Parneship</h2>
+      <div className="star-line">
+        <hr className="line" />
+        <i className="fa fa-handshake star-icon"></i>
+        <hr className="line" />
+      </div>
+    </div>
       <div className="conteiner-parnership">
           <div className="parneshipImgs">
             <a href="https://www.gsuplementos.com.br/" target="_blank" rel="noopener noreferrer"><img src={logo1} alt="" /></a>

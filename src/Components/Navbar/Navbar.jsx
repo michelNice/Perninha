@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="navbar-content-left">
           <a className="navbar-link logo" href="#header" data-anchor-link>Perninha</a>
         </div>
-
+        
         <div className="navbar-content-right">
           <ul className="navbar-toggle-content">
             <li className="navbar-item">
@@ -17,6 +17,10 @@ const Navbar = () => {
 
             <li className="navbar-item">
               <a className="navbar-link" href="#some-content-2" data-anchor-link>About me</a>
+            </li>
+
+            <li className="navbar-item">
+              <a className="navbar-link" href="#some-content-3" data-anchor-link>Crews</a>
             </li>
 
             <li className="navbar-item">
