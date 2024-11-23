@@ -1,7 +1,8 @@
 import React from 'react';
 import './AboutMe.css'; // Make sure to import your styles
+
 import image1 from '../img/aboutmeImg1.jpg'
-import image2 from '../img/aboutmeImg2.jpg'
+import image2 from '../img/aboutmeImg5.jpg'
 import image3 from '../img/aboutmeImg3.jpg'
 import  image4 from '../img/aboutmeImg4.jpg';
 

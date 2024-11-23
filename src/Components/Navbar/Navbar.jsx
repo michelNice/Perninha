@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import './Navbar.css';
 import LanguageSwitcher from './LanguageSwitcher';
 const Navbar = () => {
@@ -31,21 +31,6 @@ const Navbar = () => {
               <a className="navbar-link" href="#some-content-4" data-anchor-link>Contact me</a>
             </li>
           </ul>
-          {/** 
-          <div className="main_container">
-            <div className="lang_toggle">
-              <input type="checkbox" className="langInput" id="toggleBtn" />
-              <label htmlFor="toggleBtn" className="toggle_header">
-                <div>
-                  <img src="https://flagcdn.com/w80/br.png"alt="Brazil Flag"width="80"height="53"/>
-                </div>
-                <div>
-                  <img src="https://flagcdn.com/w80/us.png"alt="US Flag"width="80"height="53"/>
-                </div>
-              </label>
-            </div>
-          </div>
-          */}
           <LanguageSwitcher />
           <div className="navbar-toggler">
             <span className="navbar-toggler-icon"></span>
@@ -58,3 +43,264 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
+
+import React, { useState, useEffect } from 'react';
+import './Navbar.css';
+import LanguageSwitcher from './LanguageSwitcher';
+
+const Navbar = () => {
+
+  
+  const [isOpen, setIsOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  // Toggle the navbar menu
+  
+  const toggleNavbar = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+  
+  // Close the navbar menu
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+  
+  // Handle scroll to activate navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      const heightActivateState = 400;
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      setIsActive(scrolled > heightActivateState);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Smooth scrolling for anchor links
+  
+  const handleLinkClick = (event, href) => {
+    event.preventDefault();
+    closeNavbar();
+
+    if (href && href !== '#') {
+      const section = document.querySelector(href);
+      if (section) {
+        const offsetTop = section.offsetTop;
+        window.scrollTo({
+          top: offsetTop - 70, // Adjust for navbar height
+          behavior: 'smooth',
+        });
+      }
+    }
+      
+  };
+
+  return (
+    <nav className={`navbar ${isActive ? 'active' : ''}`}>
+      <div className="navbar-content">
+        <div className="navbar-content-left">
+          <a className="navbar-link logo" href="#header" data-anchor-link>
+            Perninha
+          </a>
+        </div>
+
+        <div className="navbar-content-right">
+          <ul className={`navbar-toggle-content ${isOpen ? 'open' : ''}`}>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-1"
+                data-anchor-link
+                onClick={(e) => handleLinkClick(e, '#some-content-1')}
+              >
+                Home
+              </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-2"
+                data-anchor-link
+                onClick={(e) => handleLinkClick(e, '#some-content-2')}
+              >
+                About me
+              </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-3"
+                data-anchor-link
+                onClick={(e) => handleLinkClick(e, '#some-content-3')}
+              >
+                Crews
+              </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-3"
+                data-anchor-link
+                onClick={(e) => handleLinkClick(e, '#some-content-3')}
+              >
+                Parnership
+              </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-4"
+                data-anchor-link
+                onClick={(e) => handleLinkClick(e, '#some-content-4')}
+              >
+                Contact me
+              </a>
+            </li>
+          </ul>
+          <LanguageSwitcher />
+          <div className="navbar-toggler" onClick={toggleNavbar}>
+            <span className="navbar-toggler-icon"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+
+*/
+
+
+
+
+
+import React, { useState, useEffect } from 'react';
+import './Navbar.css';
+import LanguageSwitcher from './LanguageSwitcher';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  // Toggle the navbar menu
+  const toggleNavbar = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
+  // Close the navbar menu
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
+  // Handle scroll to activate navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      const heightActivateState = 400;
+      const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      setIsActive(scrolled > heightActivateState);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Smooth scrolling for anchor links
+  const handleLinkClick = (event, href) => {
+    event.preventDefault();
+    closeNavbar();
+
+    if (href && href !== '#') {
+      const section = document.querySelector(href);
+      if (section) {
+        const offsetTop = section.offsetTop;
+        window.scrollTo({
+          top: offsetTop - 70, // Adjust for navbar height
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
+
+  return (
+    <nav className={`navbar ${isActive ? 'active' : ''}`}>
+      <div className="navbar-content">
+        <div className="navbar-content-left">
+          <a className="navbar-link logo" href="#header" data-anchor-link>
+            Perninha
+          </a>
+        </div>
+
+        <div className="navbar-content-right">
+          <ul className={`navbar-toggle-content ${isOpen ? 'open' : ''}`}>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-1"
+                onClick={(e) => handleLinkClick(e, '#some-content-1')}
+              >
+                Home
+              </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-2"
+                onClick={(e) => handleLinkClick(e, '#some-content-2')}
+              >
+                About Me
+              </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-3"
+                onClick={(e) => handleLinkClick(e, '#some-content-3')}
+              >
+                Crews
+              </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-4"
+                onClick={(e) => handleLinkClick(e, '#some-content-4')}
+              >
+                Partnership
+              </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#some-content-5"
+                onClick={(e) => handleLinkClick(e, '#some-content-5')}
+              >
+                Contact Me
+              </a>
+            </li>
+          </ul>
+          <LanguageSwitcher />
+          <div
+            className={`navbar-toggler ${isOpen ? 'open' : ''}`}
+            onClick={toggleNavbar}
+          >
+            <span className={`navbar-toggler-icon ${isOpen ? 'open' : ''}`}></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+
