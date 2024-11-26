@@ -304,7 +304,7 @@ const Navbar = () => {
             </li>
 
              <li className="navbar-item">
-                <a href="https://www.instagram.com/bboyperninha94/" target='_blank' className='nav-instagram'><i className="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/bboyperninha94/" rel="noopener noreferrer" target='_blank' className='nav-instagram'><i className="fab fa-instagram"></i></a>
             </li>
           </ul>
           <LanguageSwitcher />

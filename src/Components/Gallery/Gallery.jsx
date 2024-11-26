@@ -57,9 +57,9 @@ const Gallery = () => {
               <a
                 href={image}
                 data-fancybox="gallery"
-                data-caption={`Caption Images ${index + 1}`}
+                data-caption={`Caption  ${index + 1}`}
               >
-                <img src={image} alt={`Gallery Image ${index + 1}`} />
+                <img src={image} alt={`Gallery  ${index + 1}`} />
               </a>
             </div>
           </div>

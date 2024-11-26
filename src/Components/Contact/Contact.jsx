@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const Contact = () => {
   const { t } = useTranslation();
 
-  // State to control form fields
+ 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,9 +19,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can perform additional validation or submit logic here
-
-    // Clear form fields after submission
+   
     setFormData({
       name: '',
       email: '',

@@ -3,8 +3,8 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-  .use(LanguageDetector) // Optional: Detect user's language
-  .use(initReactI18next) // Passes i18n instance to React
+  .use(LanguageDetector) 
+  .use(initReactI18next) 
   .init({
     resources: {
       en: {
@@ -37,7 +37,6 @@ i18n
           contactNav:"entre em contato",
           resileH:"Bem-vindo ao meu mundo",
           parnership:"Parceria",
-          resileH:"Bem vindo ao meu mundo",
           buttonAbout:"Leia mais...",
           buttonContact:"Enviado",
           nameContact: "Seu Nome",  
@@ -69,10 +68,10 @@ i18n
         },
       },
     },
-    lng: "en", // Default language
+    lng: "en", 
     fallbackLng: "en",
     interpolation: {
-      escapeValue: false, // React already escapes values
+      escapeValue: false, 
     },
   });
 

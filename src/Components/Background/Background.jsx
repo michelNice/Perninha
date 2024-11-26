@@ -11,11 +11,11 @@ const Background = ({playStatus,heroCount}) => {
             <source src={video1} type="video/mp4"/>
           </video>
         ) : heroCount === 0 ? (
-          <img src={image1} className="background fade-in" alt="background photo one" />
+          <img src={image1} className="background fade-in" alt="background one" />
         ) : heroCount === 1 ? (
-          <img src={image2} className="background fade-in" alt="background photo two" />
+          <img src={image2} className="background fade-in" alt="background two" />
         ) : heroCount === 2 ? (
-          <img src={image3} className="background fade-in" alt="background photo three" />
+          <img src={image3} className="background fade-in" alt="background three" />
         ) : null}
         <div className="overlay"></div>
       </>

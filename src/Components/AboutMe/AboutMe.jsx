@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutMe.css'; 
-import i18n from '../../i18n';
 import image1 from '../img/aboutmeImg1.jpg'
 import image2 from '../img/aboutmeImg5.jpg'
 import image3 from '../img/aboutmeImg3.jpg'
@@ -22,17 +21,17 @@ const AboutMe = () => {
       <div className="contentLeft">
         <div className="row">
           <div className="imgWrapper">
-            <img src={image1} alt="About me photo one" 
+            <img src={image1} alt="AboutMe photoOne" 
             />
           </div>
           <div className="imgWrapper">
-            <img src={image2}alt="About me photo two" />
+            <img src={image2} alt="AboutMe phototwo" />
           </div>
           <div className="imgWrapper">
-            <img src={image3} alt="About me photo tree" />
+            <img src={image3} alt="AboutMe photoTree" />
           </div>
           <div className="imgWrapper">
-            <img src={image4} alt="About me photo four" />
+            <img src={image4} alt="AboutMe photoFour" />
           </div>
         </div>
       </div>
@@ -41,7 +40,7 @@ const AboutMe = () => {
           <h4>{t("resileH")}</h4>
           <h2>Bboy Perninha</h2>
           <p>{t("relise")}</p>
-          <a target='_blank' href="https://www.killarockers.com/perninha">{t("buttonAbout")}</a>
+          <a target='_blank' href="https://www.killarockers.com/perninha" rel='noreferrer'>{t("buttonAbout")}</a>
         </div>
       </div>
     </div>

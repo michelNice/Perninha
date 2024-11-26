@@ -1,5 +1,5 @@
 import './css/App.css';
-import react ,{useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import Background from './Components/Background/Background.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Hero from './Components/Hero/Hero.jsx';
@@ -8,7 +8,7 @@ import Crew from './Components/Crew/Crew.jsx';
 import Contact from './Components/Contact/Contact.jsx'
 import Gallery from './Components/Gallery/Gallery.jsx';
 import Parnership from './Components/Parnership/Parnership.jsx';
-import i18n from './i18n.jsx';
+
 
 function App() {
   const [heroCount,setHeroCount] = useState(1);
