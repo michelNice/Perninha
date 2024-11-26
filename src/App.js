@@ -8,7 +8,7 @@ import Crew from './Components/Crew/Crew.jsx';
 import Contact from './Components/Contact/Contact.jsx'
 import Gallery from './Components/Gallery/Gallery.jsx';
 import Parnership from './Components/Parnership/Parnership.jsx';
-
+import i18n from './i18n.jsx';
 
 function App() {
   const [heroCount,setHeroCount] = useState(1);
@@ -17,11 +17,11 @@ function App() {
   useEffect(()=>{
     setInterval(() => {
         setHeroCount((count)=>{return count === 2 ? 0 : count + 1})
-    },7000);
+    },10000);
   }, [])
   
   return (
-    <div>
+    <div id='home'>
         <Background playStatus={playStatus} heroCount={heroCount}/>
         
         <Navbar />

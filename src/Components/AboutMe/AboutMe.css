@@ -2,9 +2,7 @@
     --color--white:#fff;
     --color--orange:#d35400;
 }
-.main-conteiner{
-    padding-top: 100vh;
-}
+.main-conteiner{padding-top: 100vh;}
 
 .container{
     width: 100%;

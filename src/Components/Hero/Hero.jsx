@@ -2,7 +2,10 @@ import React from 'react'
 import './Hero.css';
 import play_icon from '../img/play_icon.png'
 import pause_icon from '../img/pause_icon.png'
+import { useTranslation } from 'react-i18next';
 const Hero = ({setHeroCount,heroCount,setPlayStatus,playStatus}) => {
+
+  const {t} = useTranslation()
   return (
     <div className='hero'>
     <div className='hero-dot-play'>
@@ -13,10 +16,9 @@ const Hero = ({setHeroCount,heroCount,setPlayStatus,playStatus}) => {
         </ul>
         <div className='hero-play'>
             <img onClick={()=> setPlayStatus(!playStatus)} src={playStatus?pause_icon:play_icon} alt="" />
-            <p>See the video</p>
+            <p>{t("videoHero")}</p>
         </div>
     </div>
-
   </div>
 )
   

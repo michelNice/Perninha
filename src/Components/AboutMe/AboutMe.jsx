@@ -1,16 +1,17 @@
 import React from 'react';
-import './AboutMe.css'; // Make sure to import your styles
-
+import './AboutMe.css'; 
+import i18n from '../../i18n';
 import image1 from '../img/aboutmeImg1.jpg'
 import image2 from '../img/aboutmeImg5.jpg'
 import image3 from '../img/aboutmeImg3.jpg'
 import  image4 from '../img/aboutmeImg4.jpg';
-
+import { useTranslation } from 'react-i18next';
 const AboutMe = () => {
+  const { t } = useTranslation(); 
   return (
-    <div className="main-conteiner">
-    <div className="starcontainer">
-      <h2>About me</h2>
+    <div className="main-conteiner" >
+    <div className="starcontainer" >
+      <h2 id='aboutme'>{t("about")}</h2>
       <div className="star-line">
         <hr className="line" />
         <i className="fa fa-star star-icon"></i>
@@ -37,10 +38,10 @@ const AboutMe = () => {
       </div>
       <div className="contentRight">
         <div className="content">
-          <h4>Welcome my world</h4>
+          <h4>{t("resileH")}</h4>
           <h2>Bboy Perninha</h2>
-          <p>B-Boy Perninha is a Brazilian breakdancer known for his high-energy footwork and dynamic, creative style. Hailing from Brazil, Perninha has become a significant figure in the breaking scene, with a reputation for his fast footwork, complex patterns, and unique moves. He has competed in various international battles, showcasing his skills in competitions like Red Bull BC One and other notable events.</p>
-          <a href="#">Read More...</a>
+          <p>{t("relise")}</p>
+          <a target='_blank' href="https://www.killarockers.com/perninha">{t("buttonAbout")}</a>
         </div>
       </div>
     </div>

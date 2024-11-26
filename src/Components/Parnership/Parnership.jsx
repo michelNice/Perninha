@@ -2,11 +2,13 @@ import React from 'react';
 import './Parnership.css';
 import logo1 from '../img/Logo-Growth-Supplements.png'
 import logo2 from '../img/logo-green-removebg-preview.png'
+import { useTranslation } from 'react-i18next';
 const Parnership = () => {
+  const {t} = useTranslation()
   return (
     <>
-     <div className="starcontainer">
-      <h2>Parneship</h2>
+     <div className="starcontainer" id='parnership'>
+      <h2>{t("parnership")}</h2>
       <div className="star-line">
         <hr className="line" />
         <i className="fa fa-handshake star-icon"></i>

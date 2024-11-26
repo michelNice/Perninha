@@ -3,9 +3,7 @@ import  video1 from '../img/hero.mp4';
 import image1 from '../img/perninhaImg1.jpg'
 import image2 from '../img/perninhaImg5.jpg'
 import image3 from '../img/perninhaImg4.jpg'
-
 const Background = ({playStatus,heroCount}) => {
-  
     return (
       <>
         {playStatus ? (
@@ -19,12 +17,9 @@ const Background = ({playStatus,heroCount}) => {
         ) : heroCount === 2 ? (
           <img src={image3} className="background fade-in" alt="background photo three" />
         ) : null}
-        
         <div className="overlay"></div>
       </>
     );
-  
-
 }
 
 export default Background

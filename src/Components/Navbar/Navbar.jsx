@@ -187,9 +187,14 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import LanguageSwitcher from './LanguageSwitcher';
 
+
+import { useTranslation } from 'react-i18next';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
+
+  const { t } = useTranslation(); // Access translation function
 
   // Toggle the navbar menu
   const toggleNavbar = () => {
@@ -236,7 +241,7 @@ const Navbar = () => {
     <nav className={`navbar ${isActive ? 'active' : ''}`}>
       <div className="navbar-content">
         <div className="navbar-content-left">
-          <a className="navbar-link logo" href="#header" data-anchor-link>
+          <a className="navbar-link logo" href="#home" data-anchor-link onClick={(e) => handleLinkClick(e, '#home')}>
             Perninha
           </a>
         </div>
@@ -246,47 +251,60 @@ const Navbar = () => {
             <li className="navbar-item">
               <a
                 className="navbar-link"
-                href="#some-content-1"
-                onClick={(e) => handleLinkClick(e, '#some-content-1')}
+                href="#home"
+                onClick={(e) => handleLinkClick(e, '#home')}
               >
-                Home
+                {t('home')}
               </a>
             </li>
             <li className="navbar-item">
               <a
                 className="navbar-link"
-                href="#some-content-2"
-                onClick={(e) => handleLinkClick(e, '#some-content-2')}
+                href="#aboutme"
+                onClick={(e) => handleLinkClick(e, '#aboutme')}
               >
-                About Me
+                  {t('about')}
               </a>
             </li>
             <li className="navbar-item">
               <a
                 className="navbar-link"
-                href="#some-content-3"
-                onClick={(e) => handleLinkClick(e, '#some-content-3')}
+                href="#crew"
+                onClick={(e) => handleLinkClick(e, '#crew')}
               >
-                Crews
+                {t('crews')}
               </a>
             </li>
             <li className="navbar-item">
               <a
                 className="navbar-link"
-                href="#some-content-4"
-                onClick={(e) => handleLinkClick(e, '#some-content-4')}
+                href="#parnership"
+                onClick={(e) => handleLinkClick(e, '#parnership')}
               >
-                Partnership
+                {t("parnership")}
               </a>
             </li>
             <li className="navbar-item">
               <a
                 className="navbar-link"
-                href="#some-content-5"
-                onClick={(e) => handleLinkClick(e, '#some-content-5')}
+                href="#gallery"
+                onClick={(e) => handleLinkClick(e, '#gallery')}
               >
-                Contact Me
+                  {t("gallery")}
               </a>
+            </li>
+            <li className="navbar-item">
+              <a
+                className="navbar-link"
+                href="#contact"
+                onClick={(e) => handleLinkClick(e, '#contact')}
+              >
+                {t("contactNav")}
+              </a>
+            </li>
+
+             <li className="navbar-item">
+                <a href="https://www.instagram.com/bboyperninha94/" target='_blank' className='nav-instagram'><i className="fab fa-instagram"></i></a>
             </li>
           </ul>
           <LanguageSwitcher />

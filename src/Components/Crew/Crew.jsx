@@ -4,14 +4,14 @@ import image1 from '../img/crew1.png'
 import image2 from '../img/crew10.png'
 import image3 from '../img/crew5.png'
 import image4 from '../img/crew8.png'
-import logo1 from '../img/Logo-Growth-Supplements.png'
-import logo2 from '../img/logo-green-removebg-preview.png'
+import { useTranslation } from 'react-i18next';
 const Parnership = () => {
+    const {t} = useTranslation()
   return (
     <>
-    <div className='parnership'>
+    <div className='parnership' id='crew'>
     <div className="starcontainer">
-      <h2>Crews</h2>
+      <h2>{t('crews')}</h2>
       <div className="star-line">
         <hr className="line" />
         <i className="fa fa-users star-icon"></i>
