@@ -70,7 +70,7 @@ i18n
       },
     },
     lng: "en", // Default language
-    fallbackLng: "en", // Fallback language
+    fallbackLng: "en",
     interpolation: {
       escapeValue: false, // React already escapes values
     },
