@@ -308,9 +308,8 @@ const Navbar = () => {
             </li>
           </ul>
 
-          {/*<LanguageSwitcher /> */}
+          <LanguageSwitcher /> 
           
-
           <div
 
             className={`navbar-toggler ${isOpen ? 'open' : ''}`}
