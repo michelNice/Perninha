@@ -15,9 +15,8 @@
 
 }
 .contentLeft,
-.contentRight{
-    width: 100%;
-}
+.contentRight{width: 100%;}
+
 .contentLeft .row{
     width: 100%;
     display: grid;

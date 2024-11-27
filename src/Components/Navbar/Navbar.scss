@@ -27,12 +27,11 @@ $breakpoints: (
 }
 
 .navbar {
-  /*position: fixed;*/
   position: absolute; 
   top: 0;
   width: 100%;
-  z-index: 1000; /* Ensure this is high enough 
-  background-color: rgba(0, 0, 0, 0.8); */
+  z-index: 1000; 
+  
   
   &.active {
     position: fixed;
