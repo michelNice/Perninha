@@ -59,6 +59,7 @@ const Contact = () => {
               placeholder={t("nameContact")}
               value={formData.name}
               onChange={handleChange}
+              required
             />
             <input
               type="email"
@@ -67,6 +68,7 @@ const Contact = () => {
               placeholder={t("emailContact")}
               value={formData.email}
               onChange={handleChange}
+              required
             />
             <input
               type="text"
@@ -75,6 +77,7 @@ const Contact = () => {
               placeholder={t("phoneContact")}
               value={formData.phone}
               onChange={handleChange}
+              required
             />
             <textarea
               name="message"
@@ -82,6 +85,7 @@ const Contact = () => {
               className="field"
               value={formData.message}
               onChange={handleChange}
+              required
             ></textarea>
             <button className="btn" type='submit'>{t("buttonContact")}</button>
           </div>
@@ -121,4 +125,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
