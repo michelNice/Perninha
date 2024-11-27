@@ -202,9 +202,9 @@
 
 @media (max-width: 920px) {
   .chooseLang {
-    width: 0%;
+    width: 0;
     position: absolute;
-    left: 47%;
+    left:45%;
   }
 }
 
