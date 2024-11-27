@@ -307,8 +307,12 @@ const Navbar = () => {
                 <a href="https://www.instagram.com/bboyperninha94/" rel="noopener noreferrer" target='_blank' className='nav-instagram'><i className="fab fa-instagram"></i></a>
             </li>
           </ul>
-          <LanguageSwitcher />
+
+          {/*<LanguageSwitcher /> */}
+          
+
           <div
+
             className={`navbar-toggler ${isOpen ? 'open' : ''}`}
             onClick={toggleNavbar}
           >
