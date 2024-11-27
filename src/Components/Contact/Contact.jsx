@@ -17,8 +17,8 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
+    
    
     setFormData({
       name: '',
@@ -43,11 +43,8 @@ const Contact = () => {
       <form
         className="container-contact"
         id='contact'
-        action="https://api.web3forms.com/submit"
-        method="POST"
-        onSubmit={handleSubmit}
-      >
-        <input type="hidden" name="access_key" value="853ad568-36d5-4a96-8935-6231a173bbce"/>
+        action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit}>
+      <input type="hidden" name="access_key" value="7098f102-20a7-401d-aa1e-6147898a1c35"></input>
         <div className="contact-box">
           <div className="left"></div>
           <div className="right">
@@ -82,7 +79,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
             ></textarea>
-            <button className="btn">{t("buttonContact")}</button>
+              <button className="btn" type="submit">{t("buttonContact")}</button>
           </div>
         </div>
       </form>
