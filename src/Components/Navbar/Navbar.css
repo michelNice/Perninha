@@ -3,7 +3,6 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 0 2rem;
 }
 
 .nav-instagram{
@@ -20,11 +19,13 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  max-width: 1800px;
 }
 .navbar-content-left, .navbar-content-right {
   display: flex;
   align-items: center;
   gap: 2rem;
+  
 }
 .navbar-link {
   font-size: 0.875rem;
@@ -33,6 +34,7 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  
 }
 .navbar-link:hover {
   text-decoration: underline;
