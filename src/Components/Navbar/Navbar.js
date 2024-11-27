@@ -1,5 +1,3 @@
-
-
 class NavbarToggler {
     #togglerBtn = document.querySelector(".navbar-toggler");
     #togglerContent = document.querySelector(".navbar-toggle-content");

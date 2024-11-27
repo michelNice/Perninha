@@ -13,9 +13,7 @@
     padding-bottom: 2rem;
 }
 
-
-
-@media(max-width:600px){
+@media(max-width:37.5rem){
     
     .parneshipImgs img{
         width: 140px;

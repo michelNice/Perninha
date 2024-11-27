@@ -20,9 +20,9 @@ const AboutMe = () => {
         <div className="container">
       <div className="contentLeft">
         <div className="row">
+          
           <div className="imgWrapper">
-            <img src={image1} alt="AboutMe photoOne" 
-            />
+            <img src={image1} alt="AboutMe photoOne" />
           </div>
           <div className="imgWrapper">
             <img src={image2} alt="AboutMe phototwo" />

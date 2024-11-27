@@ -1,6 +1,11 @@
 footer{padding:4rem 2rem 1rem 0;}
 
-textarea {resize: none;}
+textarea{
+	resize: none;
+	min-height: 150px;
+}
+
+/*textarea{}*/
 
 .container-contact{
 	position: relative;
@@ -53,11 +58,11 @@ textarea {resize: none;}
 	font-size: 1.1rem;
 	margin-bottom: 22px;
 	transition: .3s;
+	
 }
 
 .field:hover{background-color: rgba(0, 0, 0, 0.1);}
 
-textarea{min-height: 150px;}
 
 .btn{
 	width: 100%;
@@ -69,22 +74,18 @@ textarea{min-height: 150px;}
 	outline: none;
 	cursor: pointer;
 	transition: .3s;
-  border: 2px solid;
+  	border: 2px solid;
 }
 
 .btn:hover{
     background-color:#fff;
     color: #d35400;
-  
 }
 
 .field:focus{
     border: 2px solid #d35400;
     background-color: #fff;
 }
-
-
-
 
 @media screen and (max-width: 880px){
 	.contact-box{
@@ -105,7 +106,6 @@ textarea{min-height: 150px;}
     padding: 6px ;
   }
 
-
   .container-contact{
     position: relative;
     width: 100%;
@@ -122,17 +122,15 @@ textarea{min-height: 150px;}
 
 
 .text {
-color: white;
-font-size: 20px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-white-space: nowrap;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	white-space: nowrap;
 }
-
-
 
 .svg-inline--fa {vertical-align: -0.200em;}
 
@@ -157,8 +155,6 @@ transition: all 0.5s ease;
 margin:0 0 0 2rem;
 
 }
-
-
 
 .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
 -webkit-transform: rotate(360deg);
