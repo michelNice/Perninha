@@ -19,13 +19,11 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  max-width: 1800px;
 }
 .navbar-content-left, .navbar-content-right {
   display: flex;
   align-items: center;
   gap: 2rem;
-  
 }
 .navbar-link {
   font-size: 0.875rem;
@@ -34,7 +32,6 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  
 }
 .navbar-link:hover {
   text-decoration: underline;
@@ -144,14 +141,11 @@
 
 .logo:hover {text-decoration: 0;}
 
-
-
-
 .chooseLang {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 0%;
+  width: 1%;
   display: flex;
 }
 
@@ -166,10 +160,12 @@
   height: 40px;
   position: absolute;
   opacity: 0;
+  left: 8px;
+  top: 0;
   -webkit-transition: 0.76s;
   -o-transition: 0.76s;
   transition: 0.76s;
-  width:30px;
+  width: 40px;
 }
 
 .pt-lang {
