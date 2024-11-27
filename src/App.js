@@ -24,7 +24,7 @@ function App() {
     <div id='home'>
         <Background playStatus={playStatus} heroCount={heroCount}/>
         
-        
+        < Navbar />
 
         <Hero 
             setPlayStatus={setPlayStatus}
