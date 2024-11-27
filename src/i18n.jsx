@@ -16,6 +16,7 @@ i18n
           contactNav:"Contact Me",
           parnership:"Partnership",
           resileH:"welcome to my world",
+          submissionMessagem: "Thank you for your submission!",
           contact:"Get in Touch",
           buttonAbout:"Read More...",
           buttonContact:"Sent",
@@ -44,6 +45,7 @@ i18n
           phoneContact: "Seu Telefone",  
           massegemContact: "Sua Mensagem",
           videoHero: "Veja o vídeo",
+          submissionMessagem: "Obrigado pela sua submissão!",
           relise:"B-Boy Perninha é um breakdancer brasileiro conhecido por seu footwork enérgico e estilo dinâmico e criativo. Natural do Brasil, Perninha se tornou uma figura importante na cena do breaking, com uma reputação por seus movimentos rápidos, padrões complexos e movimentos únicos. Ele competiu em várias batalhas internacionais, mostrando suas habilidades em competições como o Red Bull BC One e outros eventos notáveis."
         },
       },
@@ -64,6 +66,7 @@ i18n
           phoneContact: "Tu Teléfono",  
           massegemContact: "Tu Mensaje",
           videoHero: "Ver el vídeo",
+          submissionMessagem: "¡Gracias por tu envío!",
           relise:"B-Boy Perninha es un breakdancer brasileño conocido por su footwork enérgico y su estilo dinámico y creativo. Originario de Brasil, Perninha se ha convertido en una figura importante en la escena del breaking, con una reputación por sus movimientos rápidos, patrones complejos y movimientos únicos. Ha competido en varias batallas internacionales, demostrando sus habilidades en competiciones como Red Bull BC One y otros eventos destacados."
         },
       },

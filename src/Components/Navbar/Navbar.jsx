@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//import './Navbar.css';
 import LanguageSwitcher from './LanguageSwitcher';
-
-
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
@@ -45,7 +42,7 @@ const Navbar = () => {
       if (section) {
         const offsetTop = section.offsetTop;
         window.scrollTo({
-          top: offsetTop - 70, // Adjust for navbar height
+          top: offsetTop - 70, 
           behavior: 'smooth',
         });
       }
@@ -60,7 +57,6 @@ const Navbar = () => {
             Perninha
           </a>
         </div>
-
         <div className="navbar-content-right">
           <ul className={`navbar-toggle-content ${isOpen ? 'open' : ''}`}>
             <li className="navbar-item">
@@ -124,12 +120,8 @@ const Navbar = () => {
           </ul>
 
           <LanguageSwitcher /> 
-          
-          <div
 
-            className={`navbar-toggler ${isOpen ? 'open' : ''}`}
-            onClick={toggleNavbar}
-          >
+          <div className={`navbar-toggler ${isOpen ? 'open' : ''}`} onClick={toggleNavbar}>
             <span className={`navbar-toggler-icon ${isOpen ? 'open' : ''}`}></span>
           </div>
         </div>
