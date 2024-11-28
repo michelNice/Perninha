@@ -10,9 +10,9 @@ i18n
       en: {
         translation: {
           home: "Home",
-          gallery: "gallery",
+          gallery: "Gallery",
           about: "About me",
-          crews:"crews",
+          crews:"Crews",
           contactNav:"Contact Me",
           parnership:"Partnership",
           resileH:"welcome to my world",
