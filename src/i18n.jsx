@@ -34,7 +34,7 @@ i18n
           gallery: "Galeria",
           about: "Sobre mim",
           crews:"Equipes",
-          contact:"entre em contato",
+          contact:"Entre em contato",
           contactNav:"Entre em contato",
           parnership:"Parceria",
           resileH:"Bem vindo ao meu mundo",
