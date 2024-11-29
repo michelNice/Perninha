@@ -2,7 +2,7 @@
 
 ## Desktop
 
-![alt text](<Design sem nome.gif>)
+![alt text](/src/Components/img/desktop.gif)
 
 ## Mobile
 
