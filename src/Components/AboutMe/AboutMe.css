@@ -47,7 +47,6 @@
     -o-transform: scale(1.2);
 }
     
- 
 .contentLeft .row .imgWrapper:nth-child(odd){transform: translateY(-20px);}
 
 .contentLeft .row .imgWrapper:nth-child(even){transform: translateY(20px);}
